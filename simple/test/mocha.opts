@@ -1,0 +1,4 @@
+--compilers scss:./test/null-compiler,js:babel-core/register
+--require test/test-helper
+--recursive
+test

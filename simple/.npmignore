@@ -1,0 +1,7 @@
+src
+test
+webpack.config.js
+*.tgz
+.babelrc
+.eslintrc
+.eslintignore

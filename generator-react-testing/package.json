@@ -1,0 +1,13 @@
+{
+  "name": "generator-react-testing",
+  "version": "0.0.1",
+  "description": "Yeoman generator for test examples.",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Nikolai Brendler <nbrendler@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.23.3"
+  }
+}
