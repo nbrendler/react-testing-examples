@@ -32,7 +32,7 @@ describe('the shopping list view', () => {
     let item = findRenderedDOMComponentWithTag(component, 'li');
     assert.equal(item.textContent, 'Milk');
   });
-  it('should render multiple todos', () => {
+  it('should render multiple items', () => {
     const component = renderIntoDocument(
       <ShoppingListView />
     );
