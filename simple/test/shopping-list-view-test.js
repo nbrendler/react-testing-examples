@@ -8,7 +8,7 @@ import {
   Simulate
 } from 'react-addons-test-utils';
 
-import ShoppingListView from 'shopping-list-view';
+import ShoppingListView from '../src/shopping-list-view';
 
 describe('the shopping list view', () => {
   it('should be empty initially', () => {

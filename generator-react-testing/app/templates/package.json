@@ -10,7 +10,7 @@
     "test:watch": "npm run test -- --watch --watch-extensions jsx,js",
     "watch": "webpack-dev-server --progress --color"
   },
-  "author": "Nikolai Brendler <nbrendler@gmail.com",
+  "author": "Nikolai Brendler <nbrendler@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "~15",

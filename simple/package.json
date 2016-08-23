@@ -6,11 +6,11 @@
     "build": "rm -rf dist && webpack",
     "lint": "eslint --max-warnings 0 .",
     "prepublish": "npm run build",
-    "test": "NODE_PATH=$NODE_PATH:./src mocha",
+    "test": "nyc --require babel-core/register --extension .jsx mocha",
     "test:watch": "npm run test -- --watch --watch-extensions jsx,js",
     "watch": "webpack-dev-server --progress --color"
   },
-  "author": "Nikolai Brendler <nbrendler@gmail.com",
+  "author": "Nikolai Brendler <nbrendler@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "~15",
@@ -18,7 +18,6 @@
     "redux": "^3.5.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.8.0",
     "babel-core": "^6.8.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.6.0",
@@ -30,6 +29,7 @@
     "jsdom": "^9.1.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.7.0",
+    "nyc": "^8.1.0",
     "react-addons-test-utils": "^15.3.1",
     "react-hot-loader": "1.3.0",
     "sass-loader": "^3.2.0",

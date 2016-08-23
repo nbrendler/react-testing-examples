@@ -1,7 +1,7 @@
 import {assert} from 'chai';
 
-import reducer, {defaultState} from 'reducer';
-import {addItem, setCurrentItem} from 'actions';
+import reducer, {defaultState} from '../src/reducer';
+import {addItem, setCurrentItem} from '../src/actions';
 
 describe('the shopping list reducer', () => {
   it('should return the default state when called with undefined', () => {

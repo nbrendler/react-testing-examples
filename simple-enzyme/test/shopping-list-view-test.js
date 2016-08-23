@@ -4,7 +4,7 @@ import sinon from 'sinon';
 
 import {shallow} from 'enzyme';
 
-import {ShoppingListView} from 'shopping-list-view';
+import {ShoppingListView} from '../src/shopping-list-view';
 
 const noop = () => {};
 

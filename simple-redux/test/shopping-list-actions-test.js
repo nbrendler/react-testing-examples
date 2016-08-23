@@ -1,6 +1,6 @@
 import {assert} from 'chai';
 
-import {addItem, setCurrentItem} from 'actions';
+import {addItem, setCurrentItem} from '../src/actions';
 
 describe('the shopping list action creators', () => {
   describe('addItem', () => {
