@@ -1,0 +1,48 @@
+{
+  "name": "simple-async",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "lint": "eslint --max-warnings 0 .",
+    "prepublish": "npm run build",
+    "test": "NODE_PATH=$NODE_PATH:./src mocha",
+    "test:watch": "npm run test -- --watch --watch-extensions jsx,js",
+    "watch": "webpack-dev-server --progress --color"
+  },
+  "author": "Isaah Forrest <isaah@openchair.io>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.13.1",
+    "node-fetch": "^1.6.0",
+    "react": "~15",
+    "react-dom": "~15",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.1.1",
+    "expect": "^1.20.2",
+    "jsdom": "^9.1.0",
+    "mocha": "^3.0.2",
+    "nock": "^8.0.0",
+    "node-sass": "^3.7.0",
+    "react-addons-test-utils": "^15.3.1",
+    "react-hot-loader": "1.3.0",
+    "redux-mock-store": "^1.1.4",
+    "sass-loader": "^3.2.0",
+    "sinon": "^1.17.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "1.12.1"
+  }
+}
